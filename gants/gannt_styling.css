@@ -1,0 +1,36 @@
+.chart {
+    -fx-background-color: #f9f9f9;
+    -fx-font-family: 'Segoe UI', Arial;
+}
+
+.chart-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.axis-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #555555;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: #eeeeee;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: #eeeeee;
+}
+
+.default-color0.chart-bar {
+    -fx-opacity: 0.8;
+    -fx-background-radius: 3 3 0 0;
+}
+
+.default-color1.chart-bar {
+    -fx-background-radius: 3 3 0 0;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+}
