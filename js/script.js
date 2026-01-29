@@ -71,6 +71,21 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // ============================================
+  // Collapsible Pillar Cards
+  // ============================================
+  const pillarToggles = document.querySelectorAll('.pillar-toggle');
+
+  pillarToggles.forEach(toggle => {
+    toggle.addEventListener('click', function() {
+      const card = this.closest('.pillar-card');
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+      this.setAttribute('aria-expanded', !isExpanded);
+      card.classList.toggle('expanded');
+    });
+  });
+
+  // ============================================
   // Scroll Reveal Animation
   // ============================================
   const revealElements = document.querySelectorAll(
